@@ -1,8 +1,9 @@
 import './style.css';
 
-import { PostCard } from '../../src/components/PostCard/index';
+import { PostCard } from '../components/PostCard/index';
 
-export const Posts = ({ posts }) => (
+export const Posts = ({ posts }) => { 
+  return (
   <div className="posts">
     {posts.map(post => (
       <PostCard
@@ -13,5 +14,4 @@ export const Posts = ({ posts }) => (
         cover={post.cover}
       />
     ))}
-  </div>
-);
+  </div>);}

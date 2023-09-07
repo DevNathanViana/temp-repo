@@ -70,17 +70,14 @@ posts;
 
         )}
       
-      <TextInput searchValue={searchValue} handleChange={this.handleChange}></TextInput>
-      </div>
-        
-        {filteredPosts.length > 0  && 
-        (
-          <Posts posts={filteredPosts} />
+      <TextInput searchValue={searchValue} handleChange={this.handleChange} />
+        </div>
 
+        {filteredPosts.length > 0 && (
+          <Posts posts={filteredPosts} />
         )}
 
-        {filteredPosts.length === 0  && 
-        (
+        {filteredPosts.length === 0 && (
           <p>Não existem posts =(</p>
         )}
 

@@ -1,7 +1,7 @@
 import './styles.css';
 
 export const TextInput = ({ searchValue, handleChange }) => {
-  return(
+  return (
     <input
       className="text-input"
       onChange={handleChange}
